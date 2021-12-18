@@ -6,16 +6,16 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
   background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
 }
 
 header ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  padding-left: 0;
   margin-right: 0.5em;
+  padding-left: 0;
 }
 
 header ul li {
@@ -23,26 +23,45 @@ header ul li {
 }
 
 #ddg-logo {
-  width: 200px;
-  height: auto;
   display: block;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
 }
 
 .searchbar {
+  background-color: white;
+  border: #d3d3d3 solid 1px;
+  border-radius: 2px;
   display: flex;
-  justify-content: space-between;
-  width: 665px;
   height: 44px;
-  border-radius: 30px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 2.5em auto;
+  width: 665px;
 }
 
 #search-input {
+  border: none;
   flex-grow: 2;
   font-size: 18px;
   font-weight: 400px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+input::placeholder {
+  color: #b3b2b2;
+}
+input:focus {
+  outline-width: 0;
+}
+
+.search-btn:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -54,30 +73,40 @@ h1 {
 p {
   font-size: 17px;
   font-weight: 400;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
+}
+
+.add-extention-cta {
+  margin: 1em auto;
+  text-align: center;
+  width: 525px;
 }
 
 a.btn-div {
+  background-color: var(--btn-color);
+  border-radius: 12px;
+  color: #fff;
+  display: block;
   font-size: 15px;
   font-weight: 700;
-  color: #fff;
-  background-color: var(--btn-color);
-  text-decoration: none;
-  padding: 0.8em 1.2em;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-  width: 235px;
   height: 42px;
+  margin: 2em auto;
+  padding: 0.8em 1.2em;
   text-align: center;
+  text-decoration: none;
+  width: 235px;
+}
+
+.search-btn {
+  background-color: transparent;
+  border: none;
 }
 
 strong {
   font-weight: 700;
 }
 
-.add-extention-cta {
-  width: 525px;
-  text-align: center;
+.info-title {
+  margin-top: 4em;
 }
