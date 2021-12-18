@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Duck Duck Go Clone</title>
   </head>
@@ -17,25 +18,35 @@
     <header>
       <ul>
         <li>
-          <img src="img/campaign_black_24dp.svg" alt="horn-icon" />
-          <img src="img/expand_more_black_24dp.svg" alt="down-arrow-icon" />
+          <a href="#">
+            <img src="img/campaign_black_24dp.svg" alt="horn-icon" />
+            <img src="img/expand_more_black_24dp.svg" alt="down-arrow-icon" />
+          </a>
         </li>
-        <li><img src="img/menu_black_24dp.svg" alt="menu-icon" /></li>
+        <li>
+          <a href="#">
+            <img src="img/menu_black_24dp.svg" alt="menu-icon" />
+          </a>
+        </li>
       </ul>
     </header>
-    <img src="img/dgg-logo.svg" alt="duck-duck-go-logo" />
+    <img id="ddg-logo" src="img/dgg-logo.svg" alt="duck-duck-go-logo" />
     <div class="searchbar">
-      <input type="text" placeholder="Search the web without being tracked" />
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search the web without being tracked"
+      />
       <button type="submit">
         <img src="img/search_black_24dp.svg" alt="search-icon" />
       </button>
     </div>
     <h1>Tired of being tracked online? We can help.</h1>
-    <p>
+    <p class="add-extention-cta">
       Add DuckDuckGo Privacy Essentials to your browser for free with one
       download:
     </p>
     <a href="#" class="btn-div">Add DuckDuckGo to Brave</a>
-    <p>Privacy Protection For Any Device</p>
+    <p><strong>Privacy Protection For Any Device</strong></p>
   </body>
 </html>

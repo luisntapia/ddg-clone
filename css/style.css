@@ -1,3 +1,67 @@
+* {
+  --font-color: #353748;
+  --btn-color: #678fff;
+  color: var(--font-color);
+}
+
 html {
   font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+}
+
+header ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#ddg-logo {
+  width: 200px;
+  height: auto;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+
+  width: 665px;
+  height: 44px;
+  border-radius: 30px;
+}
+
+#search-input {
+  flex-grow: 2;
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+a.btn-div {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--btn-color);
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.add-extention-cta {
+  width: 525px;
+  text-align: center;
 }
