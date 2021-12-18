@@ -2,6 +2,7 @@
   --font-color: #353748;
   --btn-color: #678fff;
   color: var(--font-color);
+  box-sizing: border-box;
 }
 
 html {
@@ -10,22 +11,32 @@ html {
 }
 
 header ul {
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   padding-left: 0;
+  margin-right: 0.5em;
+}
+
+header ul li {
+  margin: 1.5em 0.5em;
 }
 
 #ddg-logo {
   width: 200px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .searchbar {
   display: flex;
   justify-content: space-between;
-
   width: 665px;
   height: 44px;
   border-radius: 30px;
+  margin: 0 auto;
 }
 
 #search-input {
@@ -44,6 +55,7 @@ p {
   font-size: 17px;
   font-weight: 400;
   text-align: center;
+  margin: 0 auto;
 }
 
 a.btn-div {
@@ -54,7 +66,11 @@ a.btn-div {
   text-decoration: none;
   padding: 0.8em 1.2em;
   border-radius: 12px;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  width: 235px;
+  height: 42px;
+  text-align: center;
 }
 
 strong {
